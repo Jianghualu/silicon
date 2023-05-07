@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-Assignmennt</title>
+    <link rel="stylesheet" href="hw1style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar with Icons -->
+    <div class="nav">
+        <ul class="nav_container">
+            <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-user"></i> Login</a></li>
+        </ul>
+    </div>
+    <!-- Article view -->
+    <div class="article_container">
+        <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*qcu9lNaIIjWhhgSr5p_pew.jpeg" alt="relax">
+        <article class="article_content">
+            <h2>Take It Easy On Yourself</h2>
+            <p>It’s important that we maintain balance in our lives. While we’re living busy schedules, it’s important that we’re able to give our 100% when we absolutely need to. Don’t waste your energy doing things that won’t help you down the track.
+                It’s okay to relax and spend some time winding down. I don’t know about you, but balance in life makes it easier. If you like to chill a lot, try to mix it up with more hustle. If you’re the opposite, try to find pauses during the day. The more you experiment, the better you understand my intuition says.</p>
+        </article>
+    </div>
+
+    <!-- Online shopping checkout cart view -->
+    <div class="shopping_container">
+        <div class="shopping_info">
+            <!-- Billing Address column -->
+            <form class="shopping_info__billing">
+                <h2>Billing Address</h2>
+
+                <label for=""><i class="fa fa-solid fa-user"></i> Full Name</label>
+                <input type="text" placeholder="Sarah Lu">
+
+                <label><i class="fa fa-solid fa-envelope"></i> Email</label>
+                <input type="text" placeholder="example@example.com">
+
+                <label><i class="fa fa-solid fa-address-card"></i> Address</label>
+                <input type="text" placeholder="830 Hillview Dr">
+
+                <label><i class="fas fa-solid fa-city"></i> City</label>
+                <input type="text" placeholder="San Jose">
+
+                <div class="state-zip">
+                    <div class="state">
+                        <label>State</label>
+                        <input type="text" placeholder="CA"></ype>
+                    </div>
+                    <div class="zip">
+                        <label>Zip</label>
+                        <input type="text" placeholder="90001">
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- Payment info column -->
+            <form class="shopping_info__payment">
+                <h2>Payment</h2>
+
+                <label>Accepted Cards</label>
+                <ul class="bankcards">
+                    <li id="visa"><i class="fa fa-brands fa-cc-visa"></i></li>
+                    <li id="applepay"><i class="fab fa-brands fa-cc-apple-pay"></i></li>
+                    <li id="discover"><i class="fa fa-brands fa-cc-discover"></i></li>
+                    <li id="mastercard"><i class="fa fa-brands fa-cc-mastercard"></i></li>
+                    <li id="amex"><i class="fa fa-brands fa-cc-amex"></i></li>
+                </ul>
+
+                <label>Name on Card</label>
+                <input type="text" placeholder="Sarah Lu">
+
+                <label>Credit Card Number</label>
+                <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+
+                <label>Exp Month</label>
+                <input type="text" placeholder="April">
+
+                <div class="year-cvv">
+                    <div class="year">
+                        <label>Exp Year</label>
+                        <input type="text" placeholder="2024">
+                    </div>
+                    <div class="cvv">
+                        <label>CVV</label>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+            </form>
+
+            <div class="check-submit">
+                <input type="checkbox"><b>Shipping address same as billing</b>
+                <input type="submit" value="Continue to checkout">
+            </div>
+        </div>
+
+        <div class="shopping_cart">
+            <b>Cart</b><span id="cart"><i class="fa fa-shopping-cart"></i> 4 </span>
+            <ul>
+                <li><a href="">Item 1</a> <span> $15</span></li>
+                <li><a href="">Item 2</a> <span> $5</span></li>
+                <li><a href="">Item 3</a> <span> $8</span></li>
+                <li><a href="">Item 4</a> <span> $2</span></li>
+            </ul>
+            <hr>
+            <b>Total</b> <span id="cart-total"><b>$30</b></span>
+        </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline">
+        <div class="vl"></div>
+
+        <!-- <i class="fa fa-circle"></i> -->
+        <div class="timeline_block left">
+            <h2>2023</h2>
+            <i class="fa fa-circle"></i>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+
+        <!-- <i class="fa fa-circle"></i> -->
+        <div class="timeline_block right">
+            <h2>2022</h2><i class="fa fa-circle"></i>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+
+        <!-- <i class="fa fa-circle"></i> -->
+        <div class="timeline_block left">
+            <h2>2021</h2>
+            <i class="fa fa-circle"></i>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+
+<!--         
+        <div class="timeline_block right">
+            <h2>2020</h2>
+            <i class="fa fa-circle"></i>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div> -->
+    </div>
+
+</body>
+</html>

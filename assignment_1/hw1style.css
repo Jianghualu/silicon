@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+/* Navigation Bar with Icons */
+.nav{
+    /* border: 1px solid black; */
+    width: 100%;
+    background-color: #555555;
+    position: fixed; 
+    top: 0;
+
+}
+.nav_container{
+    /* border: 1px solid black; */
+    display: flex;
+    list-style-type:none;
+}
+
+.nav_container li{
+    /* border: 1px solid black; */
+    padding: 1%;
+    height: 100%;
+    font-size: large;
+}
+.nav_container a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_container li:hover{
+    background-color: green;
+}
+
+
+/* Article view  */
+.article_container{
+    border: 3px solid lightgrey;
+    display: flex;
+    max-width: 60%;
+    margin: 3% auto;
+}
+.article_container img{
+    /* border: 1px solid black; */
+    max-width: 30%;
+    max-height: 100%;
+    margin: 1%;
+}
+
+.article_content {
+    /* border: 1px solid black; */
+    padding: 1%;
+    margin-left: 2%;
+}
+
+.article_content h2{
+    /* border: 1px solid black; */
+    margin: 2% 0;
+}
+
+
+
+/* Online shopping checkout cart view */
+.shopping_container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.shopping_info, .shopping_cart{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+.shopping_info {
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    margin: 0 5%;
+}
+.shopping_info h2{
+    margin: 0 0 10% 0;
+}
+.shopping_info__billing, 
+.shopping_info__payment{
+    /* border: 1px solid black; */
+    margin: 3%;
+    width: 43%;
+}
+label{
+    display: block;
+}
+input[type=text]{
+    padding: 10px 20px;
+    margin: 10px 0 20px;
+    width: 100%;
+    color: darkgrey;
+    border-radius: 4px;
+}
+.state-zip label, .year-cvv label{
+    display: block;
+}
+.year-cvv, .state-zip {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    width: 100%;
+}
+.year, .cvv, .state, .zip{
+    width: 45%;
+}
+.bankcards{
+    list-style: none;
+    display: flex;
+    padding: 10px 20px 10px 0;
+    margin: 10px 0 10px;
+    width: 100%;
+    font-size: x-large;
+}
+.bankcards li{
+    width: 15%;
+}
+#visa{
+    color:dodgerblue;
+}
+#applepay{
+    color:goldenrod;
+}
+#discover{
+    color:crimson;
+}
+#mastercard{
+    color:cadetblue;
+}
+#amex{
+    color: blue;
+}
+.check-submit {
+    width: 100%;
+}
+input[type=checkbox]{
+    margin: 0 1% 0 3%;
+    font-size: medium;
+    border-radius: 4px;
+}
+input[type=submit]{
+    width: 92%;
+    font-size: large;
+    color: white;
+    background-color: #7d7777;
+    border-radius: 4px;
+    padding: 1.5%;
+    margin: 2% 3%;
+    cursor: pointer;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: green;
+}
+.shopping_cart{
+    padding: 1%;
+    width: 15%;
+    height: 50%;
+    font-size: large;
+}
+.shopping_cart b, .shopping_cart li {
+    list-style-type: none;
+    margin: 10% 0;
+    padding: 1%;
+}
+.shopping_cart a{
+    color: blue;
+    text-decoration: none;
+}
+.shopping_cart span{
+    color: lightslategray;
+    float: right;
+}
+.shopping_cart hr{
+    margin: 10% 0;
+    border: 1px solid lightslategray;
+}
+#cart-total{
+    color: black;
+}
+#cart{
+    color: black;
+    font-weight: bold; 
+}
+
+
+
+/* Timeline */
+.timeline{
+    /* border: 1px solid black; */
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    background-color:pink;
+    position: relative;
+    padding: 1%;
+}
+.vl{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 10px;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    height: 98%;
+}
+.timeline_block{
+    /* border: 1px solid black; */
+    width: 40%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2%;
+    margin: 2% 5%;
+}
+.left{
+    left:0;
+}
+.right{
+    margin: 0 55%;
+}
+/* .timeline_block::before{ 
+    content: " ";
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    background-color: white;
+    border:3px solid orange;
+    border-radius: 50%;
+    left: 49%;
+} */
+
+.timeline i{
+    color: orange;
+    font-size: xx-large;
+    position:absolute;
+    border-radius: 50%;
+    left: 49%;
+}
+
+.timeline p{
+    margin-top: 15px;
+}
+.left::before{
+    content: " ";
+    position:absolute;
+    left: 45%;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+}
+.right::before{
+    content: " ";
+    position:absolute;
+    right: 45%;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid white;
+}
